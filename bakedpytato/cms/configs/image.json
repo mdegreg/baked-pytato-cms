@@ -1,12 +1,23 @@
 {
   "name": "Simple Image",
   "description": "An image object containing an optional header and footer object.",
-  "template": [
+  "tag": "div",
+  "input": null,
+  "class": "simple-image",
+  "children": [
     {
       "name": "Header",
       "description": "The title for the image object.",
       "tag": "div",
-      "input": "text"
+      "input": "text",
+      "class": "image-header"
+    },
+    {
+      "name": "Header",
+      "description": "The title for the image object.",
+      "tag": "div",
+      "input": "text",
+      "class": "image-header"
     },
     {
       "name": "Image",
@@ -15,13 +26,15 @@
       "input": [
         "upload",
         "select"
-      ]
+      ],
+      "class": "image-content"
     },
     {
       "name": "Caption",
       "description": "The caption, if any, to add at bottom.",
       "tag": "div",
-      "input": "text"
+      "input": "text",
+      "class": "image-caption"
     }
   ]
 }
